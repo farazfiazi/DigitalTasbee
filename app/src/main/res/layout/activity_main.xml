@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_screen"
+    android:background="@drawable/one"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="88"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_color_lens_black_24dp"
+            android:id="@+id/change_theme"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="25dp"
+            />
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="86"
+            />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/volume_up"
+            android:id="@+id/volume"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+           />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/lightblack"
+
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/set_limit"
+            android:textColor="@color/textColor"
+            android:background="@color/lightblack"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:lines="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:hint="Set Limit e.g. 100, 1000 etc."
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/uncheck"
+            android:id="@+id/setlimit_icon"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+           />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reset"
+
+                android:textColor="@color/textColor"
+android:hint="RESET"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@color/lightblack"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/counter"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="000000"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="12dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:letterSpacing="0.25"
+
+            android:fontFamily="@font/bebusbold"
+            android:textSize="70sp"
+            android:id="@+id/counter"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/count_button"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
